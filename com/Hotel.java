@@ -1,9 +1,20 @@
 package com;
 
 public class Hotel {
-	public static void main(String[] args) 
-	{
-        System.out.println("Welcome to Hotel Reservation Program");
-	}
+	 private String name;
+	    private int regularRate;
+
+	    public Hotel(String name,int regularCxRate) {
+	        this.name = name;
+	        this.regularRate = regularRate;
+	    }
+
+	    @Override
+	    public String toString() {
+	        return "Hotel:"+name+" /tRegular Customer Rates: "+regularRate;
+	    }
 
 }
+	
+
+
