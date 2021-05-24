@@ -1,17 +1,29 @@
 package com;
 
-public class HotelReservation
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.List;
+
+public class HotelReservation {
+private List<Hotel> hotelList = new ArrayList<Hotel>();
+	
+public boolean addHotel(String hotelName, int regularCustRate) {
+	Hotel hotel = new Hotel(hotelName,regularCustRate, regularCustRate);
+	hotelList.add(hotel);
+	return true;
+}
+
+public static void main( String[] args )
 {
-	public static void main(String[] args) 
-	{
-        System.out.println("Welcome to Hotel Reservation Program");
-
-        Hotel Lakewood = new  Hotel("Lakewood",110);
-        Hotel Bridgewood = new Hotel("Bridgewood",160);
-        Hotel Ridgewood = new Hotel("Ridgewood",220);
-
-        System.out.println(Lakewood);
-        System.out.println(Bridgewood);
-        System.out.println(Ridgewood);
-     }
+	Scanner sc = new Scanner(System.in);
+	HotelReservation hotelReservation = new HotelReservation();
+	
+    System.out.println( "Welcome to Hotel Reservation System Program" );
+    System.out.println("Add hotel,Enter hotel name:");
+    String hotelName = sc.nextLine();
+    System.out.println("Enter regular customer rate:");
+    int regularCustRate = Integer.parseInt(sc.nextLine());
+    hotelReservation.addHotel(hotelName,regularCustRate);
+}
+	
 }
