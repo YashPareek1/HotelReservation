@@ -1,23 +1,16 @@
 package com;
 
 public class Hotel {
-	//variables
-	private String hotelName;
-	private int weekdayRegularCustRate;
-	private int weekendRegularCustRate;
-	private long totalRate;
+	private String hotelName ;
+	private int regularCustomerWeekdayRate;
+	private int regularCustomerWeekendRate;
 
-	/**
-	 * 
-	 * @param hotelName
-	 * @param weekdayRegularCustRate
-	 * @param weekendRegularCustRate
-	 */
-	public Hotel(String hotelName, int weekdayRegularCustRate, int weekendRegularCustRate) {
+	public Hotel(String hotelName, int regularCustomerWeekdayRate) {
 		this.hotelName = hotelName;
-		this.weekdayRegularCustRate = weekdayRegularCustRate;
-		this.weekendRegularCustRate = weekendRegularCustRate;
+		this.regularCustomerWeekdayRate = regularCustomerWeekdayRate;
 	}
+
+	
 
 	public String getHotelName() {
 		return hotelName;
@@ -27,30 +20,19 @@ public class Hotel {
 		this.hotelName = hotelName;
 	}
 
-	public int getWeekdayRegularCustRate() {
-		return weekdayRegularCustRate;
+	public int getRegularCustomerWeekdayRate() {
+		return regularCustomerWeekdayRate;
 	}
 
-	public void setWeekdayRegularCustRate(int weekdayRegularCustRate) {
-		this.weekdayRegularCustRate = weekdayRegularCustRate;
+	public void setRegularCustomerWeekdayRate(int regularCustomerWeekdayRate) {
+		this.regularCustomerWeekdayRate = regularCustomerWeekdayRate;
 	}
 
-	public int getWeekendRegularCustRate() {
-		return weekendRegularCustRate;
+	public int getRegularCustomerWeekendRate() {
+		return regularCustomerWeekendRate;
 	}
 
-	public void setWeekendRegularCustRate(int weekendRegularCustRate) {
-		this.weekendRegularCustRate = weekendRegularCustRate;
-	}
-
-	public long getTotalRate() {
-		return totalRate;
-	}
-
-	public void setTotalRate(long totalRate) {
-		this.totalRate = totalRate;
+	public void setRegularCustomerWeekendRate(int regularCustomerWeekendRate) {
+		this.regularCustomerWeekendRate = regularCustomerWeekendRate;
 	}
 }
-
-
-
