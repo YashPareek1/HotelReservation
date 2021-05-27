@@ -5,9 +5,10 @@ public class Hotel {
 	private int regularCustomerWeekdayRate;
 	private int regularCustomerWeekendRate;
 
-	public Hotel(String hotelName, int regularCustomerWeekdayRate) {
+	public Hotel(String hotelName, int regularCustomerWeekdayRate, int regularCustomerWeekendRate) {
 		this.hotelName = hotelName;
 		this.regularCustomerWeekdayRate = regularCustomerWeekdayRate;
+		this.regularCustomerWeekendRate = regularCustomerWeekendRate;
 	}
 
 	
